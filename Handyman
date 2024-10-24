@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handyman Business Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            border-bottom: #e8491d 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .main-content {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .submit-btn:hover {
+            background: #2b3a42;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        ul li {
+            padding: 10px;
+            background: #f9f9f9;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            .form-group input,
+            .form-group textarea,
+            .submit-btn {
+                padding: 8px;
+            }
+            .submit-btn {
+                width: 100%;
+            }
+            .section h2 {
+                font-size: 1.2em;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2em;
+                padding: 10px 0;
+            }
+            .main-content {
+                padding: 15px;
+                margin-top: 15px;
+            }
+            .section h2 {
+                font-size: 1em;
+                padding-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Handyman Business Management</h1>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+
+            <div class="section">
+                <h2>Client Inquiry & Estimate Scheduling</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="client-name">Client Name:</label>
+                        <input type="text" id="client-name" name="client-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-info">Contact Information:</label>
+                        <input type="text" id="contact-info" name="contact-info">
+                    </div>
+                    <div class="form-group">
+                        <label for="job-location">Job Location:</label>
+                        <input type="text" id="job-location" name="job-location">
+                    </div>
+                    <div class="form-group">
+                        <label for="job-description">Job Description:</label>
+                        <textarea id="job-description" name="job-description" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="urgency">Urgency:</label>
+                        <input type="text" id="urgency" name="urgency">
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Inquiry</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Job Checklist</h2>
+                <ul>
+                    <li>Materials Ordered</li>
+                    <li>Subcontractors Scheduled</li>
+                    <li>Job Started</li>
+                    <li>Client Updated</li>
+                    <li>Mid-Project Inspection/Update</li>
+                    <li>Job Completed</li>
+                    <li>Client Inspection Scheduled</li>
+                    <li>Final Payment Received</li>
+                    <li>Request Google Review & Feedback Form Sent</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Subcontractor Assignment</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="subcontractor-name">Subcontractor Name:</label>
+                        <input type="text" id="subcontractor-name" name="subcontractor-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="task-details">Task Details:</label>
+                        <textarea id="task-details" name="task-details" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-rate">Payment Rate:</label>
+                        <input type="text" id="payment-rate" name="payment-rate">
+                    </div>
+                    <button type="submit" class="submit-btn">Assign Task</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Client Follow-Up</h2>
+                <p>Thank you for trusting us with
